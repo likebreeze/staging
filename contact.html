@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href=".\css\style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <div class="menu" id="id_topnav">
+    <a href=".\index.html">首页</a>
+    <a href=".\programs.html">训练</a>
+    <a href=".\coach.html">教练</a>
+    <a class="active" href=".\contact.html">垂询</a>
+  </div>
+
+  <div class="dropdown">
+    <button onclick="onToggleMenu()" class="dropbtn aaaaa show" id="aaa"><i class="fa fa-bars"></i></button>
+    <button onclick="onToggleMenu()" class="dropbtn " id="bbb"><i class="fa fa-close"></i></button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href=".\index.html">首页</a>
+      <a href=".\programs.html">训练</a>
+      <a href=".\coach.html">教练</a>
+      <a class="active" href=".\contact.html">垂询</a>
+      <a href=""></a>
+    </div>
+  </div>
+
+  <!-- MAIN (Center website) -->
+  <div class="main">
+
+
+
+    <h1>田野足球俱乐部</h1>
+    <h2>TIAN YE SOCCER CLUB</h2>
+    <hr>
+
+    <div class="content">
+
+      <h3>扫码入微信群</h3>
+      <div style="max-width:300px;margin: auto; text-align:center;">
+        <img src=".\resources\wechatgroup.jpg" alt="WeChat Group Square Code" style="width:100%">
+      </div>
+
+      <h3>电子邮箱: </h3>
+      <div style="margin: auto; text-align:center;">
+        <h3><a href="mailto:tianyesoccer@outlook.com">tianyesoccer@outlook.com</a></h3>
+      </div>
+
+    </div>
+
+    <!-- END MAIN -->
+    <hr>
+
+  </div>
+
+  <div class="footer">
+    <h8>Copyright 2021 Tian Ye Soccer Club</h8>
+  </div>
+
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function onToggleMenu() {
+      document.getElementById("myDropdown").classList.toggle("show");
+      document.getElementById("aaa").classList.toggle("show");
+      document.getElementById("bbb").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (event) {
+      if (!event.target.contains('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>
