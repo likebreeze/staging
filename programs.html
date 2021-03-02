@@ -1,0 +1,96 @@
+<!DOCTYh5E html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href=".\css\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="menu" id="id_topnav">
+    <a href=".\index.html">首页</a>
+        <a class="active" href=".\programs.html">训练</a>
+        <a href=".\coach.html">教练</a>
+        <a href=".\contact.html">垂询</a>
+</div>
+
+<div class="dropdown">
+    <!-- <i class="fa fa-bars"></i> -->
+    <button onclick="onToggleMenu()" class="dropbtn aaaaa show" id="aaa"><i class="fa fa-bars"></i></button>
+    <button onclick="onToggleMenu()" class="dropbtn " id="bbb"><i class="fa fa-close"></i></button>
+    <div id="myDropdown" class="dropdown-content">
+        <a href=".\index.html">首页</a>
+        <a class="active" href=".\programs.html">训练</a>
+        <a href=".\coach.html">教练</a>
+        <a href=".\contact.html">垂询</a>
+    </div>    
+</div>
+    
+<!-- MAIN (Center website) -->
+<div class="main">
+    
+   
+
+<h1>田野足球俱乐部</h1>
+<h2>TIAN YE SOCCER CLUB</h2>
+<hr>
+
+
+<div class="content" >
+  <img src=".\resources\private.png" alt="private lesson" style="width:100%">
+  <h3>一对一指导</h3>
+  <h5>以丰富的教学经验，针对球员自身特点，提供个性化专业训练方案，指导球员建立正确的动作习惯，全面提高足球技术水平， 增强身体素质</h5>
+  
+  <h5 >年龄：六岁以上</h5>  
+  <h5>人数：1人</h5>
+  <h5>收费标准：$75/ 课时</h5>
+  <h5>建议训练时长：每课时75分钟，每周2～3次</h5>
+</div>
+
+<div class="content" >
+  <img src=".\resources\group.png" alt="group lesson" style="width:100%">
+  
+  <h3>小班授课</h3>
+  <h5>在重视球员的技术、身体训练的同时，结合世界先进足球理念和教练多年实战及执教心得，增加团队配合、小组对抗训练，培养球员的战术意识，团队精神，提高协同实战比赛能力</h5>
+  <h5>年龄：六岁以上</h5>
+  <h5 >收费标准：</h5>
+  
+    <h5 style="text-indent: 4rem;" >3～4人组   $150/课时</h5>
+    <h5 style="text-indent: 4rem; margin-top:0;padding-top:0;">5～6人组   $200/课时</h5>
+  
+<h5>建议训练时长：每课时60分钟，每周2～3次</h5>
+</div>
+
+<!-- END MAIN -->
+<hr>
+
+</div>
+
+<div class="footer">
+<h8>Copyright 2021 Tian Ye Soccer Club</h8>
+</div>
+
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function onToggleMenu() {
+      document.getElementById("myDropdown").classList.toggle("show");
+      document.getElementById("aaa").classList.toggle("show");
+      document.getElementById("bbb").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.contains('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+</body>
+</html>
