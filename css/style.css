@@ -15,7 +15,11 @@
   }
   
   h1 {
-    font-size: 40px;
+    font-size: 5vw;
+    word-break: break-all;
+  }
+  h2 {
+    font-size: 3vw;
     word-break: break-all;
   }
   /* Content */
