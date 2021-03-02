@@ -19,13 +19,18 @@
     word-break: break-all;
   }
   /* Content */
-  .content {
-    background-color: white;
-    padding: 10px;
-  }
+  
+    .content {
+      background-color: white;
+      padding: 10px;
+      margin-bottom: 18px ;
+        margin-left:0px;
+        margin-right:0px;
+     
+    }
   
   .footer{
-      position: fixed;
+      
       bottom: 0cm;
       font-size:12px;
       padding-bottom: 4px;
@@ -36,6 +41,8 @@
       margin:auto;
   }
   .menu{
+    max-width: 1000px;
+    margin: auto;
       float:right;
   }
   .menu a {
@@ -63,10 +70,14 @@
     border: none;
     cursor:pointer;
     display:none;
+    margin-bottom: 8px ;
+    margin-left:0px;
+    margin-right:0px;
   }
   
   .dropbtn:hover, .dropbtn:focus {
     background-color: #b8bbbd;
+
   }
   
   .dropdown {
@@ -96,3 +107,7 @@
   .dropdown a:hover {background-color: #ddd;}
   
   .show {display: block;}
+
+  .img{
+    width:100%;
+  }
