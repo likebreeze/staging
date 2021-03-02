@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href=".\css\style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <div class="menu" id="id_topnav">
+        <a class="active" href="">Home</a>
+        <a href="">Programs</a>
+        <a href="">Coaches</a>
+    </div>
+    
+    <div class="dropdown">
+        <!-- <i class="fa fa-bars"></i> -->
+        <button onclick="onToggleMenu()" class="dropbtn aaaaa show" id="aaa"><i class="fa fa-bars"></i></button>
+        <button onclick="onToggleMenu()" class="dropbtn " id="bbb"><i class="fa fa-close"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+            <a class="active" href="">Home</a>
+            <a href="">Programs</a>
+            <a href=".\coach.html">Coaches</a>
+            <a href="">About</a>
+        </div>    
+    </div>
+    
+<!-- MAIN (Center website) -->
+<div class="main">
+    
+   
+
+<h1>田野足球俱乐部</h1>
+<h2>TIAN YE SOCCER CLUB</h2>
+<hr>
+
+<div class="content">
+  <!-- <img src=".\goal_back_half_short.png" alt="Bear" style="width:100%"> -->
+  <img src=".\night_goalnet.jpg" alt="Bear" style="width:100%">
+  
+  <h3>Some Other Work</h3>
+  <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+  <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+</div>
+
+<!-- END MAIN -->
+<hr>
+
+</div>
+
+<div class="footer">
+<h8>Copyright 2021 Tian Ye Soccer Club</h8>
+</div>
+
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function onToggleMenu() {
+      document.getElementById("myDropdown").classList.toggle("show");
+      document.getElementById("aaa").classList.toggle("show");
+      document.getElementById("bbb").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.contains('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+</body>
+</html>
