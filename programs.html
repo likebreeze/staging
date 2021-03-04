@@ -8,29 +8,29 @@
   </head>
 
   <body>
-    <div class="menu" id="id_topnav">
-      <a href=".\index.html">首页</a>
-      <a class="active" href=".\programs.html">训练</a>
-      <a href=".\coach.html">教练</a>
-      <a href=".\contact.html">垂询</a>
-    </div>
 
-    <div class="dropdown">
-      <!-- <i class="fa fa-bars"></i> -->
-      <button onclick="onToggleMenu()" class="dropbtn aaaaa show" id="aaa"><i class="fa fa-bars"></i></button>
-      <button onclick="onToggleMenu()" class="dropbtn " id="bbb"><i class="fa fa-close"></i></button>
-      <div id="myDropdown" class="dropdown-content">
+
+    <!-- MAIN (Center website) -->
+    <div class="main">
+
+      <div class="menu" id="id_topnav">
         <a href=".\index.html">首页</a>
         <a class="active" href=".\programs.html">训练</a>
         <a href=".\coach.html">教练</a>
         <a href=".\contact.html">垂询</a>
       </div>
-    </div>
 
-    <!-- MAIN (Center website) -->
-    <div class="main">
-
-
+      <div class="dropdown">
+        <!-- <i class="fa fa-bars"></i> -->
+        <button onclick="onToggleMenu()" class="dropbtn show" id="menubars"><i class="fa fa-bars"></i></button>
+        <button onclick="onToggleMenu()" class="dropbtn " id="menuclosed"><i class="fa fa-close"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href=".\index.html">首页</a>
+          <a class="active" href=".\programs.html">训练</a>
+          <a href=".\coach.html">教练</a>
+          <a href=".\contact.html">垂询</a>
+        </div>
+      </div>
 
       <h1>田野足球俱乐部</h1>
       <h2>TIAN YE SOCCER CLUB</h2>
@@ -40,7 +40,7 @@
       <div class="content">
         <img src=".\resources\private1.jpg" alt="private lesson" style="width:100%">
         <h3>一对一指导
-          <span style="text-indent:4rem; color:red;"><b>&nbsp&nbspFull</b></span>
+          <span style="text-indent:4rem; color:red;"><b>&nbsp&nbsp（已满）</b></span>
           &nbsp&nbsp&nbsp<a
             href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__TgitdFUM0hFTjVCNUlISUdHSTk2VDREU0E2NklJNC4u"><b>填表等候机会</b></a>
         </h3>
@@ -85,20 +85,19 @@
 
       <!-- END MAIN -->
       <hr>
-
+      <div class="footer">
+        <h8>Copyright © 2021. Tian Ye Soccer Club. All rights reserved.</h8>
+      </div>
     </div>
 
-    <div class="footer">
-      <h8>Copyright 2021 Tian Ye Soccer Club</h8>
-    </div>
 
     <script>
       /* When the user clicks on the button, 
       toggle between hiding and showing the dropdown content */
       function onToggleMenu() {
         document.getElementById("myDropdown").classList.toggle("show");
-        document.getElementById("aaa").classList.toggle("show");
-        document.getElementById("bbb").classList.toggle("show");
+        document.getElementById("menubars").classList.toggle("show");
+        document.getElementById("menuclosed").classList.toggle("show");
       }
 
       // Close the dropdown if the user clicks outside of it
