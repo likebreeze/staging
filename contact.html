@@ -9,28 +9,28 @@
 
 <body>
 
-  <div class="menu" id="id_topnav">
-    <a href=".\index.html">首页</a>
-    <a href=".\programs.html">训练</a>
-    <a href=".\coach.html">教练</a>
-    <a class="active" href=".\contact.html">垂询</a>
-  </div>
-
-  <div class="dropdown">
-    <button onclick="onToggleMenu()" class="dropbtn aaaaa show" id="aaa"><i class="fa fa-bars"></i></button>
-    <button onclick="onToggleMenu()" class="dropbtn " id="bbb"><i class="fa fa-close"></i></button>
-    <div id="myDropdown" class="dropdown-content">
-      <a href=".\index.html">首页</a>
-      <a href=".\programs.html">训练</a>
-      <a href=".\coach.html">教练</a>
-      <a class="active" href=".\contact.html">垂询</a>
-      <a href=""></a>
-    </div>
-  </div>
 
   <!-- MAIN (Center website) -->
   <div class="main">
 
+    <div class="menu" id="id_topnav">
+      <a href=".\index.html">首页</a>
+      <a href=".\programs.html">训练</a>
+      <a href=".\coach.html">教练</a>
+      <a class="active" href=".\contact.html">垂询</a>
+    </div>
+
+    <div class="dropdown">
+      <button onclick="onToggleMenu()" class="dropbtn show" id="menubars"><i class="fa fa-bars"></i></button>
+      <button onclick="onToggleMenu()" class="dropbtn " id="menuclosed"><i class="fa fa-close"></i></button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href=".\index.html">首页</a>
+        <a href=".\programs.html">训练</a>
+        <a href=".\coach.html">教练</a>
+        <a class="active" href=".\contact.html">垂询</a>
+        <a href=""></a>
+      </div>
+    </div>
 
 
     <h1>田野足球俱乐部</h1>
@@ -46,18 +46,16 @@
 
       <h3>电子邮箱: </h3>
       <div style="margin: auto; text-align:center;">
-        <h5><a href="mailto:tianyesoccer@outlook.com">tianyesoccer@outlook.com</a></h5>
+        <h5><a href="mailto:tianyesoccer@outlook.com">tianyesoccer@outlook.com</a></h3>
       </div>
 
     </div>
 
     <!-- END MAIN -->
     <hr>
-
-  </div>
-
-  <div class="footer">
-    <h8>Copyright 2021 Tian Ye Soccer Club</h8>
+    <div class="footer">
+      <h8>Copyright © 2021. Tian Ye Soccer Club. All rights reserved.</h8>
+    </div>
   </div>
 
   <script>
@@ -65,8 +63,8 @@
     toggle between hiding and showing the dropdown content */
     function onToggleMenu() {
       document.getElementById("myDropdown").classList.toggle("show");
-      document.getElementById("aaa").classList.toggle("show");
-      document.getElementById("bbb").classList.toggle("show");
+      document.getElementById("menuebars").classList.toggle("show");
+      document.getElementById("menuclosed").classList.toggle("show");
     }
 
     // Close the dropdown if the user clicks outside of it
