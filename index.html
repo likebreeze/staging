@@ -36,7 +36,7 @@
     <hr>
 
     <div class="content">
-      <img src=".\resources\night_goalnet.jpg" alt="soccer training" style="width:100%">
+      <img src=".\resources\night_goalnet.png" alt="soccer training" style="width:100%">
 
       <p>俱乐部创始人兼总教练田野，总结20多年职业足球生涯的丰富实战和教学经验，在西雅图地区以私教和小班形式授课，倾情传授，已经吸引了一批各年龄段的少年球员。各年龄球队正在积极组建中，欢迎更多的球员加入。</p>
       <p>俱乐部的宗旨是育人为先，培养球员勇敢顽强，坚忍不拔，乐观进取的品格, 球员在足球运动中的收获会伴随他们终身热爱运动，热爱生活。</p>
@@ -44,10 +44,48 @@
 
     </div>
 
-    <div class="content" style="margin: auto; text-align:center;">
-      <video width="100%" controls autoplay muted>
-        <source src=".\resources\qiu.mp4">
-      </video>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img class="galleryentry" src=".\resources\private1.png" >
+      </div>
+      <div class="mySlides fade">
+        <img class="galleryentry" src=".\resources\coach.png">
+      </div>
+      <div class="mySlides fade">
+        <img class="galleryentry" src=".\resources\group.png">        
+      </div>
+
+      <div class="mySlides fade">
+        <video class="galleryentry" width="100%"" controls autoplay muted loop>
+          <source src=".\resources\qiu.mp4">
+        </video>
+      </div> 
+
+      <div class="mySlides fade">
+        <img class="galleryentry" src=".\resources\private.png">
+      </div>
+      
+      <div class="mySlides fade">
+        <img class="galleryentry" src=".\resources\group.png">        
+      </div>
+      <div class="mySlides fade">
+        <video class="galleryentry" width="100%"" controls autoplay muted loop>
+          <source src=".\resources\ladder.mp4">
+        </video>
+      </div> 
+      <div class="mySlides fade">
+        <img class="galleryentry" src=".\resources\team.png">
+      </div>
+      
+      <div class="mySlides fade">
+        <video class="galleryentry" width="100%"" controls autoplay muted loop>
+          <source src=".\resources\training1.mp4">
+        </video>
+      </div> 
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
     </div>
 
     <!-- END MAIN -->
@@ -80,6 +118,51 @@
         }
       }
     }
+
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
+
   </script>
 </body>
 
