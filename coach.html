@@ -8,80 +8,80 @@
 </head>
 
 <body>
-  <div class="menu" id="id_topnav">
-    <a href=".\index.html">首页</a>
-    <a href=".\programs.html">训练</a>
-    <a class="active" href=".\coach.html">教练</a>
-    <a href=".\contact.html">垂询</a>
-  </div>
 
-  <div class="dropdown">
-    <!-- <i class="fa fa-bars"></i> -->
-    <button onclick="onToggleMenu()" class="dropbtn aaaaa show" id="aaa"><i class="fa fa-bars"></i></button>
-    <button onclick="onToggleMenu()" class="dropbtn " id="bbb"><i class="fa fa-close"></i></button>
-    <div id="myDropdown" class="dropdown-content">
-      <a href=".\index.html">首页</a>
-      <a href=".\programs.html">训练</a>
-      <a class="active" href=".\coach.html">教练</a>
-      <a href=".\contact.html">垂询</a>
-
-    </div>
-  </div>
 
   <!-- MAIN (Center website) -->
   <div class="main">
 
 
+    <div class="menu" id="id_topnav">
+      <a href=".\index.html">首页</a>
+      <a href=".\programs.html">训练</a>
+      <a class="active" href=".\coach.html">教练</a>
+      <a href=".\contact.html">垂询</a>
+    </div>
+
+    <div class="dropdown">
+      <!-- <i class="fa fa-bars"></i> -->
+      <button onclick="onToggleMenu()" class="dropbtn show" id="menubars"><i class="fa fa-bars"></i></button>
+      <button onclick="onToggleMenu()" class="dropbtn " id="menuclosed"><i class="fa fa-close"></i></button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href=".\index.html">首页</a>
+        <a href=".\programs.html">训练</a>
+        <a class="active" href=".\coach.html">教练</a>
+        <a href=".\contact.html">垂询</a>
+
+      </div>
+    </div>
 
     <h1>田野足球俱乐部</h1>
     <h2>TIAN YE SOCCER CLUB</h2>
     <hr>
 
     <div class="content">
-      <div style="max-width:300px;margin: auto; text-align:center;">
-      <img src=".\resources\tianye_portrait.jpg" alt="Coach Tian Ye" style="max-width: 300px;">
+      <div style="max-width:400px;margin: auto; text-align:center;">
+        <img src=".\resources\tianye_portrait.jpg" alt="Coach Tian Ye" style="max-width: 300px;">
 
-      <h2>田野教练简介</h2>
-      <div class="infosection" style="padding-bottom: 18px;">
-      <h4>职业生涯曾效力中国顶级联赛</h4>
-      <div style="text-align:center;">
-      <p>北京国安队足球俱乐部</p>
-      <p>天津泰达足球俱乐部</p>
-      <p>长春亚泰足球俱乐部</p>
-      <p>厦门蓝狮足球俱乐部</p>
+        <h2>田野教练简介</h2>
+        <div class="infosection" style="padding-bottom: 18px;">
+          <h4>职业生涯曾效力中国顶级联赛</h4>
+          <div style="text-align:center;">
+            <p>北京国安队足球俱乐部</p>
+            <p>天津泰达足球俱乐部</p>
+            <p>长春亚泰足球俱乐部</p>
+            <p>厦门蓝狮足球俱乐部</p>
+          </div>
+        </div>
+
+
+        <h4>亚足联A级教练员 - 职业球队执教经历</h4>
+        <div style="text-align:center;">
+          <p>中国国家女足前锋教练</p>
+          <p>沈阳金德助理教练</p>
+          <p>长春亚泰助理教练</p>
+          <p>长春亚泰预备队主教练</p>
+          <p>天津天海 (权健) U19主教练</p>
+        </div>
+      </div>
+
+
     </div>
-    </div>
-
-
-      <h4>亚足联A级教练员 - 职业球队执教经历</h4>
-      <div style="text-align:center;">
-      <p>中国国家女足前锋教练</p>
-      <p>沈阳金德助理教练</p>
-      <p>长春亚泰助理教练</p>
-      <p>长春亚泰预备队主教练</p>
-      <p>天津天海 (权健) U19主教练</p>
-    </div>
-    </div>
-
-
-  </div>
 
     <!-- END MAIN -->
     <hr>
-
+    <div class="footer">
+      <h8>Copyright © 2021. Tian Ye Soccer Club. All rights reserved.</h8>
+    </div>
   </div>
 
-  <div class="footer">
-    <h8>Copyright 2021 Tian Ye Soccer Club</h8>
-  </div>
 
   <script>
     /* When the user clicks on the button, 
     toggle between hiding and showing the dropdown content */
     function onToggleMenu() {
       document.getElementById("myDropdown").classList.toggle("show");
-      document.getElementById("aaa").classList.toggle("show");
-      document.getElementById("bbb").classList.toggle("show");
+      document.getElementById("menubars").classList.toggle("show");
+      document.getElementById("menuclosed").classList.toggle("show");
     }
 
     // Close the dropdown if the user clicks outside of it
