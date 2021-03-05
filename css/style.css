@@ -65,6 +65,34 @@
       }
   }
   
+  .responsivetitle{
+    position: absolute; 
+    top: 0; 
+    left:20%;
+    padding:0; 
+    margin-left:0; 
+    font-weight: bolder; 
+  }
+  
+  .inChinese{
+    font-size:4.5vw;
+    margin-top:0.5em; 
+    margin-bottom:0.2em;
+  }
+  
+  .inEnglish{
+    font-size:3.5vw;
+    margin:0.2em; 
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .inChinese{
+      font-size:50px;
+    }
+    .inEnglish{
+      font-size:35px;
+    }
+  }
   
   .dropbtn {
     
