@@ -38,53 +38,40 @@
     <div class="content">
       <img src=".\resources\night_goalnet.png" alt="soccer training" style="width:100%">
 
-      <p>俱乐部创始人兼总教练田野，总结20多年职业足球生涯的丰富实战和教学经验，在西雅图地区以私教和小班形式授课，倾情传授，已经吸引了一批各年龄段的少年球员。各年龄球队正在积极组建中，欢迎更多的球员加入。</p>
-      <p>俱乐部的宗旨是育人为先，培养球员勇敢顽强，坚忍不拔，乐观进取的品格, 球员在足球运动中的收获会伴随他们终身热爱运动，热爱生活。</p>
-      <p>在训练上，我们注重个人技术及团队合作的平衡。每个年龄段的球员都有大量的个人技术的训练，这是球队实力的基础。我们重视团队的勇气，智慧和意志的培养，从而打造一支具有强劲实力的和精神魅力的球队。</p>
+      <p>田野足球俱乐部于2021年在西雅图地区创建，致力于推广足球运动，为球员提供高质量的训练，并培养球队代表俱乐部参加美国青少年足球联赛。目前主要训练形式是私教和小班授课，各年龄球队也正在筹办中，欢迎有兴趣的球员报名。</p>
+      <p>创始人兼总教练，前国安队前锋和前国家女足前锋教练田野，有20多年职业球员和执教职业球队的经验，对足球运动和教学有独到心得。他创办足球俱乐部的宗旨是教球育人，强健体魄。</p>
+      <p>在训练上，我们注重个人技术和团队战术的平衡。每个球员都会接受大量的个人技术训练，从小打下坚实的功底，最大发挥球员的潜能。</p>
+      <p>此外，对球员勇敢顽强，坚忍不拔，乐观进取的精神的培育贯穿俱乐部训练的始终。相信强健体魄和足球精神会伴随球员，一生热爱运动，积极生活。</p>
 
     </div>
 
     <div class="slideshow-container">
       <div class="mySlides fade">
-        <img class="galleryentry" src=".\resources\private1.png" >
+        <img class="galleryentry" src=".\resources\private1.png">
       </div>
       <div class="mySlides fade">
-        <img class="galleryentry" src=".\resources\coach.png">
-      </div>
-      <div class="mySlides fade">
-        <img class="galleryentry" src=".\resources\group.png">        
-      </div>
-
-      <div class="mySlides fade">
-        <video class="galleryentry" width="100%"" controls autoplay muted loop>
+        <video class="galleryentry" width="100%" controls autoplay muted loop>
           <source src=".\resources\qiu.mp4">
         </video>
-      </div> 
+      </div>
+      <div class="mySlides fade">
+        <img class="galleryentry" src=".\resources\group.png">
+      </div>
 
       <div class="mySlides fade">
-        <img class="galleryentry" src=".\resources\private.png">
-      </div>
-      
-      <div class="mySlides fade">
-        <img class="galleryentry" src=".\resources\group.png">        
-      </div>
-      <div class="mySlides fade">
-        <video class="galleryentry" width="100%"" controls autoplay muted loop>
+        <video class="galleryentry" width="100%" controls autoplay muted loop>
           <source src=".\resources\ladder.mp4">
         </video>
-      </div> 
+      </div>
       <div class="mySlides fade">
         <img class="galleryentry" src=".\resources\team.png">
       </div>
-      
+
       <div class="mySlides fade">
-        <video class="galleryentry" width="100%"" controls autoplay muted loop>
+        <video class="galleryentry" width="100%" controls autoplay muted loop>
           <source src=".\resources\training1.mp4">
         </video>
-      </div> 
-      
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
 
     </div>
 
@@ -117,34 +104,6 @@
           }
         }
       }
-    }
-
-
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
     }
 
     var slideIndex = 0;
